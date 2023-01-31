@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements TvShowListener {
         binding.tvShowRecyclerView.setAdapter(tvShowsAdapter);
 
         getMostPopularTvShow();
-
         binding.imageWatchList.setOnClickListener(view -> {
             startActivity(new Intent(getApplicationContext(), WatchlistActivity.class));
         });
